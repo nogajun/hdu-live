@@ -1,0 +1,14 @@
+black
+flake8
+pipx
+python-is-python3
+python3-all
+python3-flake8-black
+python3-flake8-builtins
+python3-flake8
+python3-ipykernel
+python3-pexpect
+python3-pip
+python3-tk
+python3-venv
+python3-yaml

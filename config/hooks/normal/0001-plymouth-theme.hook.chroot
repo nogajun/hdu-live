@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+# set plymouth theme
+
+if [ -e /usr/sbin/plymouth-set-default-theme ] && [ -e /usr/share/plymouth/themes/spinner ]
+then
+	plymouth-set-default-theme spinner
+fi

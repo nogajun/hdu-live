@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -e
+
+# Remove unused packages
+
+apt-get -y purge fonts-droid-fallback fonts-vlgothic fonts-ipafont fonts-ipafont-gothic fonts-ipafont-mincho uim uim-mozc anthy firefox-esr firefox-esr-l10n-ja plasma-welcome
+apt-get -y purge libreoffice-core libreoffice-help-ja libreoffice-l10n-ja libreoffice-common libreoffice-plasma
+apt-get -y purge gimp xterm
+apt-get -y autoremove

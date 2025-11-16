@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+# extrepo setup and install packages 
+
+sed -ie 's/^# -/-/g' /etc/extrepo/config.yaml
+
+extrepo update
+
+for i in google_chrome vscode docker-ce mozilla uv
+do
+    extrepo enable $i
+done
+
+apt-get -y -U install code docker-ce google-chrome-stable uv firefox firefox-l10n-ja
+
+extrepo disable vscode
+extrepo disable google_chrome
+
+apt-get -u update
