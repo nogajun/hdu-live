@@ -3,12 +3,8 @@
 set -e
 
 # extrepo setup and install packages
-
-apt-get -y purge needrestart
-
 sed -ie 's/^# -/-/g' /etc/extrepo/config.yaml
 extrepo update
-
 
 # enable ext repos
 repos="debian_backports google_chrome mozilla r-project uv vscode virtualbox docker-ce"
