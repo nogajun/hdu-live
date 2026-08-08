@@ -16,4 +16,4 @@ done
 
 # install ext repo packages
 packages="code google-chrome-stable virtualbox-7.2 uv ruff"
-apt-get -y -U $packages
+apt-get -y -U install $packages
