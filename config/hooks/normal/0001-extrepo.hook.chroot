@@ -2,20 +2,24 @@
 
 set -e
 
-# extrepo setup and install packages 
-
+# extrepo setup and install packages
 sed -ie 's/^# -/-/g' /etc/extrepo/config.yaml
 
 extrepo update
 
-for i in google_chrome vscode docker-ce mozilla uv
+# enable ext repos
+repos="debian_backports google_chrome mozilla r-project uv virtualbox vscode"
+for repo in $repos
 do
-    extrepo enable $i
+    extrepo enable $repo
 done
 
-apt-get -y -U install code docker-ce google-chrome-stable uv firefox firefox-l10n-ja
+# install ext repo packages
+packages="code google-chrome-stable virtualbox-7.2 uv ruff"
+apt-get -y -U $packages
 
-extrepo disable vscode
-extrepo disable google_chrome
+# install R packages
+r_packages="r-base r-base-dev r-cran-sem r-cran-rgl r-cran-markdown r-cran-leaps r-cran-rcmdr r-cran-rodbc cmake libssl-dev libxml2-dev libcurl4-openssl-dev texlive-xetex texlive-luatex texlive-lang-japanese"
+apt-get -y -U $r_packages
 
-apt-get -u update
+apt-get -y update

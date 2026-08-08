@@ -3,7 +3,8 @@
 set -e
 
 # set flathub repository and install packages
-
 flatpak remote-add --system --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-flatpak install --system --noninteractive org.gimp.GIMP org.inkscape.Inkscape org.libreoffice.LibreOffice org.videolan.VLC org.freecad.FreeCAD org.gtk.Gtk3theme.Breeze
+# install flatpak packages
+flatpak_packages="io.freetubeapp.FreeTube org.luanti.luanti org.libreoffice.LibreOffice org.freecad.FreeCAD org.gtk.Gtk3theme.Breeze"
+flatpak install --system --noninteractive $flatpak_packages

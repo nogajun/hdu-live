@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e
+
+# configure zram-tools
+sed -ie "s/^\(ALGO=\).*/\1zstd/g" /etc/default/zramswap

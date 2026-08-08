@@ -1,0 +1,33 @@
+# system
+aptitude
+tmux
+ripgrep
+dkms
+linux-headers-amd64
+extrepo
+vim
+curl
+rclone
+default-jdk
+gawk
+expect
+pandoc
+cryptsetup
+ethtool
+overlayroot
+ufw
+wakeonlan
+htpdate
+zram-tools
+apt-transport-https
+arp-scan
+ca-certificates
+desktop-file-utils
+
+# firmware
+bluez-firmware
+firmware-atheros
+firmware-intel-sound
+firmware-iwlwifi
+firmware-linux
+firmware-realtek
