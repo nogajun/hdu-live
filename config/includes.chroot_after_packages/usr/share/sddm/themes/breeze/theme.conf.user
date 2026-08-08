@@ -1,0 +1,8 @@
+[General]
+background=/usr/share/wallpapers/Nexus/contents/images/1080x1920.png
+type=image
+Numlock=on
+DisplayServer=x11
+
+[Theme]
+Font=Noto Sans CJK JP Medium

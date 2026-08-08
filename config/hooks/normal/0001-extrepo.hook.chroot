@@ -17,9 +17,3 @@ done
 # install ext repo packages
 packages="code google-chrome-stable virtualbox-7.2 uv ruff"
 apt-get -y -U $packages
-
-# install R packages
-r_packages="r-base r-base-dev r-cran-sem r-cran-rgl r-cran-markdown r-cran-leaps r-cran-rcmdr r-cran-rodbc cmake libssl-dev libxml2-dev libcurl4-openssl-dev texlive-xetex texlive-luatex texlive-lang-japanese"
-apt-get -y -U $r_packages
-
-apt-get -y update

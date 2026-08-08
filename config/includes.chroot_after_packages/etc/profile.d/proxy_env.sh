@@ -1,0 +1,8 @@
+# export http_proxy="http://163.134.3.4:3128"
+# export https_proxy="http://163.134.3.4:3128"
+# export ftp_proxy="http://163.134.3.4:3128"
+# export HTTP_PROXY="http://163.134.3.4:3128"
+# export HTTPS_PROXY="http://163.134.3.4:3128"
+# export FTP_PROXY="http://163.134.3.4:3128"
+# export no_proxy="localhost,127.0.0.1"
+# export NO_PROXY="localhost,127.0.0.1"
