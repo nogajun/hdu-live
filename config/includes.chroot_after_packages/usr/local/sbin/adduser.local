@@ -1,0 +1,12 @@
+#!/bin/bash
+set -eu
+
+username=$1
+uid=$2
+gid=$3
+home=$4
+
+# コピーしたDesktopフォルダーの名前をデスクトップに変更する
+if [ -d "$home/Desktop" ]; then
+  mv "$home/Desktop" "$home/デスクトップ"
+fi
