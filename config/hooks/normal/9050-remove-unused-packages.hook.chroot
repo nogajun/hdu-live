@@ -6,6 +6,7 @@ set -e
 
 remove_packages="akregator anthy apt-listchanges dragonplayer fcitx-frontend-qt5 fcitx-modules fonts-droid-fallback fonts-ipaexfont-gothic fonts-ipaexfont-mincho fonts-ipafont fonts-ipafont-gothic fonts-ipafont-mincho fonts-noto-extra fonts-noto-ui-extra fonts-vlgothic ibus-data juk kde-config-fcitx kmail korganizer libreoffice-common libreoffice-core libreoffice-plasma plasma-browser-integration plasma-welcome uim uim-mozc webext-plasma-browser-integration xterm"
 
+apt-get -y -U upgrade
 apt-get -y purge $remove_packages
 apt-get -y autoremove
 apt-get -y clean

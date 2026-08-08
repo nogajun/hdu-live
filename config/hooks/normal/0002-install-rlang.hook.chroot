@@ -3,7 +3,7 @@
 set -e
 
 # install R packages
-r_packages="r-base r-base-dev r-cran-sem r-cran-rgl r-cran-markdown r-cran-leaps r-cran-rcmdr r-cran-rodbc cmake libssl-dev libxml2-dev libcurl4-openssl-dev texlive-xetex texlive-luatex texlive-lang-japanese"
+r_packages="r-base r-base-dev r-cran-sem r-cran-rgl r-cran-markdown r-cran-leaps r-cran-rcmdr r-cran-rodbc cmake libssl-dev libxml2-dev libcurl4-openssl-dev"
 apt-get -y -U install $r_packages
 
 # install EZR

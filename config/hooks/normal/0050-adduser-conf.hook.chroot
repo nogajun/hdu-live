@@ -3,7 +3,6 @@
 set -e
 
 # configure adduser.conf
-if [ -e /etc/adduser.conf ]
-then
+if [ -e /etc/adduser.conf ]; then
   sed -ie 's/^#EXTRA_GROUPS="users"$/EXTRA_GROUPS="users tty disk cdrom audio video plugdev kvm render scanner bluetooth lpadmin docker libvirt vboxusers"/g' /etc/adduser.conf
 fi

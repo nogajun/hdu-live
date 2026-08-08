@@ -6,5 +6,9 @@ set -e
 flatpak remote-add --system --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 # install flatpak packages
-flatpak_packages="io.freetubeapp.FreeTube org.luanti.luanti org.libreoffice.LibreOffice org.freecad.FreeCAD org.gtk.Gtk3theme.Breeze"
+flatpak_packages="org.luanti.luanti org.libreoffice.LibreOffice org.freecad.FreeCAD"
 flatpak install --system --noninteractive $flatpak_packages
+
+if [ -n "$(flatpak list | grep -i nvidia)" ]; then
+  flatpak uninstall --system --noninteractive org.freedesktop.Platform.GL.nvidia-610-57-04 org.freedesktop.Platform.VAAPI.nvidia
+fi

@@ -5,12 +5,10 @@ autokey-qt
 colord-kde
 debconf-kde-data
 debconf-kde-helper
-filelight
 grub-theme-breeze
 isoimagewriter
 kcharselect
 kcolorchooser
-kde-config-flatpak
 kde-config-gtk-style-preview
 kde-config-plymouth
 kde-zeroconf
@@ -25,7 +23,6 @@ krename
 krfb
 kwin-addons
 okular-extra-backends
-plasma-discover-backend-flatpak
 plasma-workspace-wallpapers
 plymouth-theme-breeze
 plymouth-themes
@@ -39,9 +36,6 @@ qt6-style-kvantum
 veyon-configurator
 veyon-master
 pkexec
-fonts-croscore
-fonts-crosextra-caladea
-fonts-crosextra-carlito
 fonts-inconsolata
 fonts-lato
 fonts-morisawa-bizud-gothic
@@ -50,12 +44,16 @@ fonts-mplus
 fonts-open-sans
 fonts-opendin
 fonts-roboto
-cabextract
-libmspack0t64
-ttf-mscorefonts-installer
+fonts-croscore
+fonts-crosextra-caladea
+fonts-crosextra-carlito
 sqlite3
 sqlite3-tools
 sqlitebrowser
+flatpak
+flatpak-xdg-utils
+kde-config-flatpak
+plasma-discover-backend-flatpak
 
 # IME
 fcitx5
@@ -71,12 +69,10 @@ flac
 libsox-fmt-all
 sox
 vorbis-tools
-elisa
 ffmpeg
 mencoder
 mjpegtools
 mpv
-smplayer
 v4l-conf
 v4l2loopback-dkms
 v4l2loopback-utils
@@ -102,9 +98,6 @@ qemu-system
 qemu-user
 qemu-user-static
 virt-manager
-docker-clean
-docker-compose
-docker.io
 
 # printer
 bluetooth

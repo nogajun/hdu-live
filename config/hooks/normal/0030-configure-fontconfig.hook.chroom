@@ -5,13 +5,11 @@ set -e
 # configure fontconfig
 
 # delete original config
-for f in "10-hinting-slight.conf 10-sub-pixel-none.conf"
-  do
-    rm -f "/etc/fonts/conf.d/${f}"
-  done
+for f in "10-hinting-slight.conf 10-sub-pixel-none.conf"; do
+  rm -f /etc/fonts/conf.d/${f}
+done
 
 # configure fontconfig settings
-for f in "10-hinting-none.conf 10-sub-pixel-rgb.conf 25-unhint-nonlatin.conf"
-  do
-    ln -s "/usr/share/fontconfig/conf.avail/${f}" "/etc/fonts/conf.d/${f}"
-  done
+for f in "10-hinting-none.conf 10-sub-pixel-rgb.conf 25-unhint-nonlatin.conf"; do
+  ln -s /usr/share/fontconfig/conf.avail/${f} /etc/fonts/conf.d/${f}
+done

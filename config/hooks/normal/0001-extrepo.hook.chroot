@@ -3,17 +3,19 @@
 set -e
 
 # extrepo setup and install packages
-sed -ie 's/^# -/-/g' /etc/extrepo/config.yaml
 
+apt-get -y purge needrestart
+
+sed -ie 's/^# -/-/g' /etc/extrepo/config.yaml
 extrepo update
 
+
 # enable ext repos
-repos="debian_backports google_chrome mozilla r-project uv virtualbox vscode"
-for repo in $repos
-do
-    extrepo enable $repo
+repos="debian_backports google_chrome mozilla r-project uv vscode virtualbox docker-ce"
+for repo in $repos; do
+  extrepo enable $repo
 done
 
 # install ext repo packages
-packages="code google-chrome-stable virtualbox-7.2 uv ruff"
+packages="code google-chrome-stable uv ruff docker-ce"
 apt-get -y -U install $packages
