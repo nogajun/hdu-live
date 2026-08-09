@@ -1,0 +1,9 @@
+#!/bin/sh
+
+export R_PROFILE_USER=/usr/local/lib/ezr/Rprofile
+
+exec R \
+  --quiet \
+  --no-save \
+  --no-restore \
+  --interactive

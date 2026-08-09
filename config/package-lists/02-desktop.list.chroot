@@ -69,10 +69,12 @@ flac
 libsox-fmt-all
 sox
 vorbis-tools
+elisa
 ffmpeg
 mencoder
 mjpegtools
 mpv
+libdvd-pkg
 v4l-conf
 v4l2loopback-dkms
 v4l2loopback-utils
@@ -88,6 +90,7 @@ gmic
 inkscape
 python3-sphinxcontrib.svg2pdfconverter
 blender
+yt-dlp
 
 # virtualization
 binfmt-support

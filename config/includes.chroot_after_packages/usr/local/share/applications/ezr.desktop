@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=EZR
+Name[ja]=EZR
+GenericName=Statistical Analysis
+Comment=Statistical analysis with EZR
+Exec=/usr/local/bin/ezr
+Icon=rlogo_icon
+Terminal=true
+Categories=Education;Science;Math;
+StartupNotify=true

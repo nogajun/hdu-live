@@ -10,3 +10,4 @@ apt-get -y -U upgrade
 apt-get -y purge $remove_packages
 apt-get -y autoremove
 apt-get -y clean
+p=$(dpkg -l | grep ^rc | cut -d" " -f 3); [ -n "$p" ] && dpkg -P $p

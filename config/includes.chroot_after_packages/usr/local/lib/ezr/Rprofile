@@ -1,0 +1,10 @@
+# EZR起動設定
+options(
+  Rcmdr = list(
+    plugins = "RcmdrPlugin.EZR"
+  )
+)
+
+suppressPackageStartupMessages(
+  library(Rcmdr)
+)
