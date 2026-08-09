@@ -16,7 +16,6 @@ cryptsetup
 ethtool
 ufw
 wakeonlan
-htpdate
 zram-tools
 arp-scan
 ca-certificates

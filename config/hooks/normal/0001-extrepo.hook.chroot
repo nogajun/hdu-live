@@ -13,5 +13,5 @@ for repo in $repos; do
 done
 
 # install ext repo packages
-packages="code google-chrome-stable uv ruff docker-ce"
+packages="code google-chrome-stable uv ruff virtualbox-7.2 docker-ce"
 apt-get -y -U install $packages
